@@ -5,7 +5,8 @@ const cors = require("cors")
 
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin:true))
 
 app.post('/', (req, res) => {
     res.json({ success: true });
